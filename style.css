@@ -1,0 +1,174 @@
+.divisor1 {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+#id1,
+#id2,
+#id3,
+a {
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(8, 46, 159);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.divisor2 {
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+
+.contendorBody {
+    height: 700px;
+    width: 100%;
+
+
+}
+
+.ofertas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(29, 29, 183);
+
+
+}
+
+.contendorBody h1 {
+    color: rgb(209, 49, 20);
+    width: 100%;
+    text-align: center;
+
+}
+
+.productosEnOferta {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    background-color: white;
+    object-fit: cover;
+
+
+
+}
+
+.oferta1,
+.oferta2,
+.oferta3 {
+    display: flex;
+    height: 90%;
+
+}
+
+#precioAnterior {
+    text-decoration: line-through;
+}
+
+#ahorro {
+    color: red;
+}
+
+.historia {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+
+}
+
+.imagenes {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.imagenes img {
+    width: 300px;
+    height: 200PX;
+
+
+}
+
+.contendorFooter {
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    width: 100%;
+
+
+}
+
+.divisorFooter1 {
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.imgMediosDePago {
+    object-fit: cover;
+    width: 50%;
+
+}
+
+.divisorFooter2 {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    border: 2px;
+    background-color: rgb(8, 46, 159);
+    align-items: flex-end;
+
+}
+
+.divisorFooter2 p {
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.contacto {
+    height: 700px;
+    width: 100%
+}
+
+.imagenContacto {
+    display: flex;
+    background-image: url(./Imagenes/Contacto.jpg);
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imagenContacto h1 {
+    font-size: 50px;
+}
+.formularioContacto{
+    display: flex;
+    height: 20px;
+    width: 250px;
+    justify-content: center;
+    border-radius: 5%;
+  
+    
+}
+#comentario{
+    height: 100px;
+}
+#enviar:hover{
+    background-color: green
+    
+}

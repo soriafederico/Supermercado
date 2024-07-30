@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado On Line</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <header>
+
+            <div class="contendorHeader">
+                <div class="divisor1">
+                    <div id="id1"> <a href="./index.html">Inicio</a></div>
+                    <div id="id2"><a href="./productos.html">Productos</a></div>
+                    <div id="id3"><a href="./contacto.html">Contacto</a></div>
+
+                </div>
+
+
+                <div class="divisor2">
+                    <img class="imgLogo" src="./Imagenes/logo___8ebc4231614a7b41a4258354ce76e1e1.svg" alt="Logo">
+
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <div class="contacto">
+        <div class="imagenContacto">
+            <h1>Contáctanos</h1>
+        </div>
+        <div class="formulario">
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="formularioContacto" minlength="2" placeholder="Juan" required>
+                <label for="apellido">Apellido </label>
+                <input type="text" id="apellido" class="formularioContacto" minlength="2" placeholder="López" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="formularioContacto" ominlength="2" placeholder="noreply@supermercado.com" required>
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="formularioContacto" minlength="10" placeholder="2284 605528" required>
+                <label for="comentario">Dejanos tu comentario</label>
+                <input form="text" id="comentario"class="formularioContacto" minlength="2" maxlength="50"
+                    placeholder="Máximo 50 (cincuenta caracteres)">
+                <button id="enviar">Enviar Solicitud</button>
+
+            </form>
+            <div class="contactoEmpresa">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="contendorFooter">
+            <div class="divisorFooter1">
+
+                <div class="divisorFooter2">
+                    <h3> Dori S.R.L., CUIT 30-67004730-0, Bolivia 5801, Ciudad Autónoma de Buenos Aires (C1419DVM),
+                        República Argentina.</h3>
+
+                </div>
+
+            </div>
+
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="./main.js"></script>
+</body>
