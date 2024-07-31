@@ -4,10 +4,13 @@ let arrPrecio = [980.00, 1750.00, 3280.00, 2600.00, 1250.00, 790.00, 980.00, 136
 let arrCant = [10, 15, 30, 20, 15, 5, 10, 8, 5, 10, 6, 5, 3, 5, 6]
 let arrImagen = ["./1.webp", "./2.webp", "./2.webp", "./3.webp", "./4.webp", "./5.webp", "./6.webp", "./7.webp", "./8.webp", "./9.webp", "./10.webp", "./11.webp", "./12.webp", "./13.webp", "./14.webp", "./15.webp"]
 
-function cargarProductos(arrreyProdutos, arrayPrecios, ArrayCantidad, arrayimagenes) {
+function cargarProductos(arrayProdutos, arrayPrecios, ArrayCantidad, arrayimagenes) {
   for (let i = 0;i<arrProductos.length;i++){
-    document.getElementById("imagen").innerHTML +=arrImagen[i];
+const div =document.querySelector(".card")
+div.innerHTML=
+
     
+
 
   }
 
