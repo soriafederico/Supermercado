@@ -7,7 +7,7 @@ let arrImagen = ["./1.webp", "./2.webp", "./2.webp", "./3.webp", "./4.webp", "./
 function cargarProductos(arrayProdutos, arrayPrecios, ArrayCantidad, arrayimagenes) {
   for (let i = 0;i<arrProductos.length;i++){
 const div =document.querySelector(".card")
-div.innerHTML=
+div.innerHTML +=
 
     
 
