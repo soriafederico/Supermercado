@@ -52,8 +52,8 @@ function cargarProductos(
       <p>${arrayProdutos[i]}</p>
       <p>$ ${arrayPrecios[i]}</p>
       <p>Stock: ${arrayCantidad[i]}</p>
-      <input type="number" name="inpCantidad" id="${inpCantidad[i]}" min="0">
-      <button id ="${boton[i]}"> Comprar</button>
+    <input type="number" name="inpCantidad" id="inpCantidad ${i}" min="0">
+      <button id ="boton ${i}"> Comprar</button>
     </div>`;
   }
 }

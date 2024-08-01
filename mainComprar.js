@@ -1,7 +1,11 @@
 "use strict";
-let boton = document.querySelector("#${boton[i]}");
+
+
+function recorrer (array){
+for(let i=0; i<Array.length;i++){
+let boton = document.querySelector(`#boton${i}`);
 boton.addEventListener("click", () => {
-  let cantidad = document.querySelector("#${inpCantidad[i]}").value;
+  let cantidad = document.querySelector(`inpCantidad${i}`).value;
   cantidad = Number(cantidad);
 
   if (cantidad > 0 && (arrCant[i] - cantidad) > 0) {
@@ -10,12 +14,13 @@ boton.addEventListener("click", () => {
    (cantidad < 0){
     alert("La cantidad ingresada tiene que ser mayor a 0")
   } else 
-  (cantidad < arrCant[i]){
+  
     alert("Cantidad no disponible")
 
   }
-})
-
+)
+}
+}
 
 
 function comprar(cantidad) {
@@ -24,3 +29,4 @@ function comprar(cantidad) {
   document.getElementById("total").innerText = total
   arrCant [i] = arrCant [i] - cantidad;
 }
+recorrer (arrProductos)
