@@ -1,7 +1,7 @@
 "use strict";
 let boton = document.querySelector("#${boton[i]}");
 boton.addEventListener("click", () => {
-  let cantidad = document.querySelector("#inpCantidad").value;
+  let cantidad = document.querySelector("#${inpCantidad[i]}").value;
   cantidad = Number(cantidad);
 
   if (cantidad > 0 && (arrCant[i] - cantidad) > 0) {
