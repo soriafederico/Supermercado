@@ -53,36 +53,14 @@ function cargarProductos(
       <p>$ ${arrayPrecios[i]}</p>
       <p>Stock: ${arrayCantidad[i]}</p>
       <input type="number" name="inpCantidad" id="inpCantidad" min="0">
-      <button> Comprar</button>
+      <button id ="${boton[i]}"> Comprar</button>
     </div>`;
   }
 }
 
 cargarProductos(arrProductos, arrPrecio, arrCant, arrImagen);
 
-/*<form action="" name="form">
-<div class="card">
-    <img id="imagen" alt="">
-    <p name="nombre">Nombre</p>
-    <p name="precio">Precio</p>
-    <p name="stock">Stock</p>
-    <input type="number" name="inpCantidad" id="inpCantidad" min="0">
-    <button> Comprar</button>
-    </div>
 
 
 
 
-/*document.querySelector("div button").addEventListener("click", () => {
-  let cantidad = document.querySelector("div input").value;
-  cantidad = Number(cantidad);
-  if (cantidad > 0 && (arrCant[0] - cantidad) > 0) {
-    comprar(cantidad);
-  } else {
-    alert("ingrese una cantidad mayor a cero o no hay stock")
-  }
-})
-
-function comprar(cantidad) {
-  document.getElementById("total").innerText = cantidad * arrPrecio[0];
-}*/
