@@ -23,11 +23,31 @@ a {
 }
 
 .contendorBody {
-    height: 700px;
+    height: 950px;
     width: 100%;
-
-
+    
+ 
 }
+.contendorBodyProductos{
+    height: 950px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    height: 250px;
+    width: 300px;
+    
+}
+.card img{
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+}
+#inpCantidad{
+    width: 40px;
+}
+
 
 .ofertas {
     display: flex;
