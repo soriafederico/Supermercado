@@ -1,20 +1,79 @@
 "use strict";
-let arrProductos = ["Tallarin Lucchetti", "Aceite de Girasol Cañuelas", "Yerba Mañanita", "Arroz Parboil Dos Hermanos", "Tomate Molto Pelado", "Harina 000 Morixe", "Leche La Serenísima", "Azucar Check Comun ", "Jabón líquido para ropa Ala ", "Detergente Cif Bioactive", "Shampoo Dove", "Jabones De Tocador Rexona", "Cerveza Rubia Lata Heineken", "Vino Malbec Alma Mora", "Gaseosa Schweppes Zero"]
-let arrPrecio = [980.00, 1750.00, 3280.00, 2600.00, 1250.00, 790.00, 980.00, 1360.00, 1610.00, 1550.00, 2900.00, 2400.00, 2450.00, 4600.00, 2900.00]
-let arrCant = [10, 15, 30, 20, 15, 5, 10, 8, 5, 10, 6, 5, 3, 5, 6]
-let arrImagen = ["./1.webp", "./2.webp", "./2.webp", "./3.webp", "./4.webp", "./5.webp", "./6.webp", "./7.webp", "./8.webp", "./9.webp", "./10.webp", "./11.webp", "./12.webp", "./13.webp", "./14.webp", "./15.webp"]
+let arrProductos = [
+  "Tallarin Lucchetti",
+  "Aceite de Girasol Cañuelas",
+  "Yerba Mañanita",
+  "Arroz Parboil Dos Hermanos",
+  "Tomate Molto Pelado",
+  "Harina 000 Morixe",
+  "Leche La Serenísima",
+  "Azucar Check Comun ",
+  "Jabón líquido para ropa Ala ",
+  "Detergente Cif Bioactive",
+  "Shampoo Dove",
+  "Jabones De Tocador Rexona",
+  "Cerveza Rubia Lata Heineken",
+  "Vino Malbec Alma Mora",
+  "Gaseosa Schweppes Zero",
+];
+let arrPrecio = [
+  980.0, 1750.0, 3280.0, 2600.0, 1250.0, 790.0, 980.0, 1360.0, 1610.0, 1550.0,
+  2900.0, 2400.0, 2450.0, 4600.0, 2900.0,
+];
+let arrCant = [10, 15, 30, 20, 15, 5, 10, 8, 5, 10, 6, 5, 3, 5, 6];
+let arrImagen = [
+  "./Imagenes/1.webp",
+  "./Imagenes/2.webp",
+  "./Imagenes/2.webp",
+  "./Imagenes/3.webp",
+  "./Imagenes/4.webp",
+  "./Imagenes/5.webp",
+  "./Imagenes/6.webp",
+  "./Imagenes/7.webp",
+  "./Imagenes/8.webp",
+  "./Imagenes/9.webp",
+  "./Imagenes/10.webp",
+  "./Imagenes/11.webp",
+  "./Imagenes/12.webp",
+  "./Imagenes/13.webp",
+  "./Imagenes/14.webp",
+  "./Imagenes/15.webp",
+];
+let contenedor = document.querySelector(".contendorBody");
 
-function cargarProductos(arrayProdutos, arrayPrecios, ArrayCantidad, arrayimagenes) {
-  for (let i = 0;i<arrProductos.length;i++){
-const div =document.querySelector(".card")
-div.innerHTML +=
-
-    
-
-
+function cargarProductos(
+  arrayProdutos,
+  arrayPrecios,
+  arrayCantidad,
+  arrayimagenes
+) {
+  for (let i = 0; i < arrProductos.length; i++) {
+    contenedor.innerHTML += 
+    `<div class="card">
+      <img src="${arrayimagenes[i]}" alt="${arrayProdutos[i]}">
+      <p>${arrayProdutos[i]}</p>
+      <p>${arrayPrecios[i]}</p>
+      <p>Stock: ${arrayCantidad[i]}</p>
+      <input type="number" name="inpCantidad" id="inpCantidad" min="0">
+      <button> Comprar</button>
+    </div>`;
   }
-
 }
+
+cargarProductos(arrProductos, arrPrecio, arrCant, arrImagen);
+
+/*<form action="" name="form">
+<div class="card">
+    <img id="imagen" alt="">
+    <p name="nombre">Nombre</p>
+    <p name="precio">Precio</p>
+    <p name="stock">Stock</p>
+    <input type="number" name="inpCantidad" id="inpCantidad" min="0">
+    <button> Comprar</button>
+    </div>
+
+
+
 
 /*document.querySelector("div button").addEventListener("click", () => {
   let cantidad = document.querySelector("div input").value;
@@ -30,8 +89,7 @@ function comprar(cantidad) {
   document.getElementById("total").innerText = cantidad * arrPrecio[0];
 }*/
 
-
-let nombre = document.getElementById("nombre");
+/*let nombre = document.getElementById("nombre");
 let apellido = document.getElementById("apellido");
 let email = document.getElementById("email");
 let telefono = document.getElementById("telefono");
@@ -63,4 +121,4 @@ btnEnviar.addEventListener("click", function (e) {
     alert("Su comentario ha sido enviado de forma exitosa")
   }
 }
-)
+)*/
